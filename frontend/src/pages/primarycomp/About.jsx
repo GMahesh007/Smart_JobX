@@ -94,7 +94,7 @@ export default function Component() {
               textShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)', // Shadow for heading
             }}
           >
-            Why Amplify?
+            Why Smart JobX?
           </h1>
           <p
             style={{
@@ -106,11 +106,11 @@ export default function Component() {
               textShadow: '1px 1px 3px rgba(0, 0, 0, 0.1)', // Shadow for paragraph
             }}
           >
-Amplify revolutionizes job searching by using NLP to analyze resumes and match job seekers with personalized opportunities. Unlike traditional job boards, Amplify tailors job listings based on the roles identified in the seeker’s resume.
+Smart JobX revolutionizes job searching by using NLP to analyze resumes and match job seekers with personalized opportunities. Unlike traditional job boards, JobX tailors job listings based on the roles identified in the seeker’s resume.
 
-What sets Amplify apart is its mock test feature. Job seekers must complete a test related to the job they are applying for, with their scores determining their eligibility to apply and unlock referral option from recruiters.
+What sets Smart JobX apart is its mock test feature. Job seekers must complete a test related to the job they are applying for, with their scores determining their eligibility to apply and unlock referral option from recruiters.
 
-For recruiters, Amplify simplifies job management with tools for posting, updating, and deleting job listings. The platform also offers resume skill gap analysis, helping Seekers make more effective changes.
+For recruiters, Jobx simplifies job management with tools for posting, updating, and deleting job listings. The platform also offers resume skill gap analysis, helping Seekers make more effective changes.
           </p>
           <div
             style={{
@@ -121,7 +121,7 @@ For recruiters, Amplify simplifies job management with tools for posting, updati
             }}
           >
             <a
-              href="https://github.com/sharathdoes/amplify"
+              href="https://github.com/GMahesh007"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -138,7 +138,7 @@ For recruiters, Amplify simplifies job management with tools for posting, updati
               <span style={{ position: 'absolute', width: '0', height: '0', overflow: 'hidden' }}>GitHub</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/sharath-chandra-gaddam-851a45263/"
+              href="https://www.linkedin.com/in/gmaheshmahi007/"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -155,7 +155,7 @@ For recruiters, Amplify simplifies job management with tools for posting, updati
               <span style={{ position: 'absolute', width: '0', height: '0', overflow: 'hidden' }}>LinkedIn</span>
             </a>
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=sharath7693@gmail.com&su=from%20amplify%20website"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=maheshgaikandu9248@gmail.com&su=from%20Smart-JobX%20website"
               style={{
                 color: '#666',
               }}

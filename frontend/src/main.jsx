@@ -7,7 +7,7 @@ import RootLayout from "./RootLayout.jsx"; // Adjust the import path as necessar
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <GoogleOAuthProvider clientId="378355759629-u605vb2ieq6mnbn6gniiomrive5c4kvf.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="326738687009-2fkg5bjke3870f23ag2nrnc35te7rmse.apps.googleusercontent.com">
       <RootLayout>
         <App />
       </RootLayout>

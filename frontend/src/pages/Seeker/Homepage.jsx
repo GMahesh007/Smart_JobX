@@ -64,7 +64,7 @@ export default function HeroSection() {
 
   const handleRecruitClick = () => {
     navigate("/recruit");
-    toast.success("Welcome to Amplify!", { duration: 2000 });
+    toast.success("Welcome to Smart JobX!", { duration: 2000 });
   };
 
   const handleAnalysisClick = () => {
@@ -95,7 +95,7 @@ export default function HeroSection() {
           animate="visible"
         >
           <motion.h1 className="text-4xl mt-10 font-bold tracking-tighter sm:text-5xl animate__animated animate__fadeInDown">
-            Amplify careers. Boost opportunities.
+            Smart JobX careers. Boost opportunities.
           </motion.h1>
           <motion.h1 className="text-4xl font-bold tracking-tighter sm:text-5xl animate__animated animate__fadeInDown">
             Test your skills and stand out.
@@ -172,7 +172,7 @@ export default function HeroSection() {
 
         <motion.div className="mt-16 mb-10" variants={itemVariants}>
           <p className="text-gray-700 md:text-xl text-center">
-            Spend a minute or two giving <FeedbackDrawer /> it will help me a lot.
+            {/* Spend a minute or two giving <FeedbackDrawer /> it will help me a lot. */}
           </p>
         </motion.div>
       </div>

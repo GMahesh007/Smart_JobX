@@ -36,24 +36,108 @@ export default function Component() {
     event.preventDefault(); // Prevent the default behavior (e.g., opening the file)
   };
 
-  const downloadPDF = () => {
-    const doc = new jsPDF();
+  // const downloadPDF = () => {
+  //   const doc = new jsPDF();
 
-    // Add title
-    doc.setFontSize(18);
-    doc.text('Skill Gap Analysis Report', 14, 22);
+  //   // Add title
+  //   doc.setFontSize(18);
+  //   doc.text('Skill Gap Analysis Report', 14, 22);
 
-    // Add some margin between title and text
-    doc.setFontSize(12);
+  //   // Add some margin between title and text
+  //   doc.setFontSize(12);
    
     
-    doc.text(`Analysis Results:`, 14, 40);
-    console.log(analysis);
-    doc.text(analysis || 'No analysis generated', 14, 32, { maxWidth: 180 });
+  //   doc.text(`Analysis Results:`, 14, 40);
+  //   console.log(analysis);
+  //   doc.text(analysis || 'No analysis generated', 14, 50,{ maxWidth: 180 });
 
-    // Save the generated PDF
-    doc.save('analysis_report.pdf');
-  };
+  //   // Save the generated PDF
+  //   doc.save('analysis_report.pdf');
+  // };
+
+//   const downloadPDF = () => {
+//     const doc = new jsPDF();
+
+//     // Add a background color to the title section
+//     doc.setFillColor(230, 230, 250); // Light purple background
+//     doc.rect(10, 10, 190, 15, 'F'); // Rectangle for title background
+
+//     // Title styling
+//     doc.setFontSize(18);
+//     doc.setTextColor(40, 40, 100); // Dark blue color
+//     doc.setFont('helvetica', 'bold');
+//     doc.text('Skill Gap Analysis Report', 14, 20);
+
+//     // Add a separator line
+//     doc.setDrawColor(100, 100, 100); // Gray color
+//     doc.line(10, 28, 200, 28); // Horizontal line
+
+//     // Add spacing and Analysis Results header with styling
+//     doc.setFontSize(14);
+//     doc.setTextColor(0, 0, 0);
+//     doc.text('Analysis Results:', 14, 40);
+
+//     // Add a box for the analysis text
+//     doc.setFillColor(245, 245, 245); // Light gray background
+//     doc.rect(14, 45, 180, 40, 'F'); // Rectangle for text box
+
+//     // Adjusted y-coordinate for proper spacing
+//     doc.setFontSize(12);
+//     doc.setTextColor(50, 50, 50);
+//     console.log(analysis);
+//     doc.text(analysis || 'No analysis generated', 16, 55, { maxWidth: 176 });
+
+//     // Save the generated PDF
+//     doc.save('analysis_report.pdf');
+// };
+const downloadPDF = () => {
+  const doc = new jsPDF();
+
+  // Add a background color to the title section
+  doc.setFillColor(230, 230, 250); // Light purple background
+  doc.rect(10, 10, 190, 15, 'F'); // Rectangle for title background
+
+  // Title styling
+  doc.setFontSize(18);
+  doc.setTextColor(40, 40, 100); // Dark blue color
+  doc.setFont('helvetica', 'bold');
+  doc.text('Skill Gap Analysis Report', 14, 20);
+
+  // Add a separator line
+  doc.setDrawColor(100, 100, 100); // Gray color
+  doc.line(10, 28, 200, 28); // Horizontal line
+
+  // Add spacing and Analysis Results header with styling
+  doc.setFontSize(14);
+  doc.setTextColor(0, 0, 0);
+  doc.setFont('helvetica', 'bold');
+  doc.text('Analysis Results:', 14, 40);
+
+  // Add a box for the analysis text
+  doc.setFillColor(245, 245, 245); // Light gray background
+  doc.rect(14, 45, 180, 160, 'F'); // Rectangle for text box
+
+  // Set text styling
+  doc.setFontSize(12);
+  doc.setTextColor(50, 50, 50);
+  doc.setFont('helvetica', 'bold');
+
+  // Convert analysis text into an array with line breaks
+  const analysisText = analysis || 'No analysis generated';
+  const textLines = doc.splitTextToSize(analysisText, 176);
+  
+  // Adjust line spacing (1.25)
+  let y = 55; // Start position for text inside the box
+  textLines.forEach(line => {
+      doc.text(line, 16, y);
+      y += 6; // Line spacing of ~1.25
+  });
+
+  // Save the generated PDF
+  doc.save('analysis_report.pdf');
+};
+
+
   const hello = async () => {
     if (!file) return;
 

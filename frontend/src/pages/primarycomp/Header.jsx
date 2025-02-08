@@ -123,7 +123,7 @@ export default function Header() {
         <nav className="ml-auto hidden lg:flex flex-grow gap-3 items-center justify-center header-nav">
   <a href="#" className="hidden lg:flex items-center">
     <img src={image} alt="Acme Inc" className="h-10 w-10" /> {/* Increased image size */}
-    <span className="ml-1 mr-52 text-black text-md font-bold header-nav">Amplify</span> {/* Added text beside the image */}
+    <span className="ml-1 mr-52 text-black text-md font-bold header-nav">Smart-JobX</span> {/* Added text beside the image */}
   </a>
   <motion.a
     onClick={handleC}
